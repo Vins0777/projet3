@@ -1,4 +1,4 @@
-/****** General ***********/
+/*** General ***/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -62,8 +62,8 @@ a {
 
 
 
-/* SEARCH AND FILTERS */
-/* SEARCH */
+/* RECHERCHE ET FILTRES */
+/* RECHERCHE */
 
 .search_destination {
     display: flex;
@@ -115,7 +115,7 @@ form {
     display: flex;
 }
 
-/*FILTERS*/
+/*FILTRES*/
 
 .filters {
     display: flex;
@@ -183,7 +183,7 @@ p i {
     font-size: 12px;
 }
 
-/* HERBERGEMENT POPULAIRES */
+/* HEBERGEMENTS POPULAIRES */
 /* SECTION */
 .section-title {
     font-size: 22px;
@@ -201,7 +201,7 @@ p i {
     box-sizing: border-box;
 }
 
-/* CARDS */
+/* CARTES */
 
 .hebergements {
     width: 65%;
@@ -252,7 +252,7 @@ p i {
     color: #F2F2F2
 }
 
-/*MARSEILLE*/
+/* MARSEILLE */
 
 .marseille_cards {
     display: flex;
@@ -286,3 +286,382 @@ p i {
 
 
 
+/* POPULAIRES */
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 30px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+/* ACTIVITE */
+
+.activités_title {
+    margin-left: 20px;
+    padding-bottom: 20px;
+
+}
+
+.info_activités {
+    display: flex;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.card_actvités {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card_actvités a{
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.card_actvités img {
+    width: 100%;
+    height: 370px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.activites_name {
+    margin-left: 15px;
+}
+
+/* Footer */
+
+footer {
+    margin: 0px 10px;
+    background-color: #F2F2F2;
+    padding: 15px;
+    padding-top: 0;
+    display: flex;
+    gap: 250px
+}
+
+/* MEDIA QUERRY */
+/* MEDIUM DEVICE (768px-1024px) */
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    .main-container main {
+        padding: 0px 0px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .hebergements-and-populaires section {
+        padding: 20px;
+    }
+
+    .hebergements,
+    .populaires {
+        width: 100%;
+    }
+
+    .populaires {
+        margin-top: 50px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .hebergements h2,
+    h3.other_hebergements {
+        margin-bottom: 10px;
+        margin-left: 8px;
+    }
+
+
+    .marseille_cards .card {
+        margin: 5px 10px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+        margin-top: 10px;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 12px;
+    }
+
+    .marseille_cards .card-title {
+        font-size: 12px;
+    }
+
+    .populaires-cards img {
+        height: auto;
+    }
+
+    .populaires-cards .card-content {
+        padding-left: 5px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .marseille_cards .card-subtitle {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .populaires-cards .card-rating {
+        margin-top: 50px;
+    }
+
+    .activités {
+        padding-top: 15px;
+    }
+
+    .info_activités {
+        padding-top: 20px;
+        gap: 30px;
+    }
+
+    .card_actvités img {
+        height: 190px;
+    }
+
+    .card_actvités {
+        height: 260px;
+    }
+
+    footer {
+        gap: 110px
+    }
+}
+
+/* SMALL DEVICE (320px-768px) */
+
+@media screen and (max-width: 767px) {
+
+    .main-container {
+        padding: 0;
+    }
+
+    .main-container main {
+        padding: 0px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 20px;
+        gap: 0px
+    }
+
+    a {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+    }
+
+    nav a {
+        border-bottom: solid #F2F2F2;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        border-top: none;
+    }
+
+    .search_and_filters {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    form {
+        width: 100%;
+        justify-content: center;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .submit {
+        display: none;
+    }
+
+    #search::before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f002";
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .choice_filters {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .filters_mobile {
+        width: 100%;
+    }
+
+    .filter_text_icon {
+        margin-bottom: 15px;
+        padding-left: 15px;
+        width: 50%;
+    }
+
+    .name_filter {
+        font-size: 13px;
+    }
+
+    .fa-info {
+        width: 30px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    .populaires,
+    .hebergements {
+        width: 100%;
+    }
+
+    .hebergements {
+        background-color: white;
+    }
+
+    .card-title {
+        font-size: 13px;
+    }
+
+    .marseille_cards {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .marseille_cards .card {
+        margin: 0;
+        width: auto;
+    }
+
+    /* ACTIVITES */
+
+    .activités {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .activités_title {
+        margin: 0;
+    }
+
+    .info_activités {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .card_actvités img {
+        height: 150px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 5px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+
+    .main-container,
+    .main-container main {
+        padding: 0;
+    }
+
+    footer {
+        margin: 0;
+        gap: 290px
+    }
+}
